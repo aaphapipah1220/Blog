@@ -1,0 +1,85 @@
+/* =================== GENERAL FORM ================= */
+.form__section {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin-bottom: 5rem;
+}
+
+.alert__message {
+    padding: 0.8rem 1.4rem;
+    margin-bottom: 1rem;
+    border-radius: var(--card-border-radius-2);
+}
+
+.alert__message.error {
+    background: var(--color-red-light);
+    color: var(--color-danger);
+}
+
+.alert__message.success {
+    background: var(--color-green-light);
+    color: var(--color-300);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form__section-container {
+    width: var(--form-width);
+}
+
+.form__control {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+input, textarea, select {
+    padding: 1rem 1.4rem;
+    background: var(--color-light);
+    border-radius: var(--card-border-radius-2);
+    resize: none;
+    color: var(--color-900);
+}
+
+.form__section small {
+    margin-top: 1rem;
+    display: block;
+}
+
+.form__section small a {
+    color: var(--color-300);
+}
+
+.form__section small a:hover {
+    color: var(--color-danger);
+}
+
+/* ====================== MEDIA QUERIES (MEDIUM DEVICES) ======================*/
+@media screen and (max-width: 1024px) {
+    .form__section {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .form__section-container {
+        width: var(--container-width-lg);
+    }
+
+}
+
+/* ====================== MEDIA QUERIES (SMALL DEVICES) ======================*/
+@media screen and (max-width: 600px) {
+    .form__section {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .form__section-container {
+        width: var(--container-width-md);
+    }
+}
