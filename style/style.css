@@ -375,6 +375,7 @@ footer ul a:hover {
 .btn {
     display: inline-block;
     width: fit-content;
+    height: 50px;
     padding: 0.6rem 1.2rem;
     background-color: var(--color-primary);
     border-radius: var(--card-border-radius-2);
